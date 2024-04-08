@@ -1,11 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap');
+
+@media (max-width: 700px) {
 body {
+   box-sizing: border-box;
    background-color: #f3e5d8;
-    font-family: Arial, sans-serif;
   }
-  
-  header, .header2 {
+}
+
+  header, footer {
     display: grid;
     grid-template-columns: 1fr auto;
     background-color: #255538;
@@ -13,9 +16,8 @@ body {
     padding:  30px;
     font-family: serif;
     margin-bottom: 20px;
-    
-    
   }
+
   .subtitulo{
     width: 1239px;
     margin: auto;
@@ -52,7 +54,7 @@ body {
     margin:auto;
 
   }
-p{
+  .textcontentenido{
   color: #7E4333;
   font-family: serif;
   font-size: 30px;
@@ -66,11 +68,12 @@ p{
     margin: 0;
     display: flex;
     color: white;
-   
+    font-family: serif;
   }
   
   nav ul li {
     margin-left: 20px;
+    font-family: serif;
   }
   
   
@@ -122,4 +125,19 @@ p{
     object-fit: cover;
     height: 100%;
     width: 100%;
+  }
+  p{
+    color: #7E4333;
+    font-family: serif;
+    font-size: 25px;
+  }
+  .botondark{
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+  }
+  .dark-mode button {
+    background-color: #333;
+    color: #fff;
   }

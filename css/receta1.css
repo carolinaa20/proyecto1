@@ -1,116 +1,186 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap');
+
 body {
-    box-sizing: border-box;
-    margin: 0;
-    background-color:#f3e5d8;
-  }
-  header, .header2 {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    background-color: #255538;
-    color: white;
-    padding:  30px;
-    font-family: serif;
-    
-  }
+  box-sizing: border-box;
+  background-color: #f3e5d8;
+}
+
+.footer,header{
+  display: grid;
+  grid-template-columns: 1fr auto;
+  background-color: #255538;
+  color: white;
+  padding: 30px;
+  font-family: serif;
+  border-radius: 5px;
+  margin-bottom: 20px;
+
+}
+
+h1 {
+  color: #7E4333;
+  font-family: serif;
+  font-size: 27px;
+  padding: auto;
+}
+
+h3 {
+  color: #7E4333;
+  font-family: serif;
+  font-size: 20px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.img-titulo-re {
+  width: 780px;
+  height: 287px;
+  border-radius: 5px;
+}
+
+.img-receta {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 15px;
   
-  img{
-    border-collapse: collapse;
-    border-radius: 10px;
   
-  }
-  h1{
-    color:#7E4333 ;
-    font-family: serif;
-    font-size: 27px;
-    padding: auto;
-  }
-  h3{
-    color:#7E4333 ;
-    font-family: serif;
-    font-size: 20px;
-    padding: 10px;
-  }
-  .textof{
-    font-family: serif;
-    color: #7E4333;
-    font-weight: 20px;
-    
-  }
+}
+
+.textof {
+  font-family: serif;
+  color: #7E4333;
+  font-weight: 20px;
+
+}
+
+.logo {
+  font-size: 24px;
+  font-family: serif;
+  color: white;
+}
+
+.logo2 {
+  font-size: 24px;
+  font-family: sans-serif;
+  color: white;
+}
+
+#flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  color: white;
+
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+header, footer{
+  background-color: #255538;
+  grid-area: header;
+  color: white;
+  font-family: Serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
   
-  .logo {
-    font-size: 24px;
-    font-family: serif;
-    color: white;
-  }
-  
-  .logo2{
-    font-size: 24px;
-    font-family:sans-serif ;
-    color: white;
-  }
-  #flex-container {
-    display: flex;
-    justify-content: space-between;
-    }
-  
-    nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      color: white;
-     
-    }
-  
-    nav ul li a {
-      color: #fff;
-      text-decoration: none;
-    }
-    
-  
-  header {
-    background-color: #255538;
-    grid-area: header;
-    color: white;
-    font-family: Serif;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+}
+
+header #logo {
+  width: 50px;
+}
+
+header nav ul {
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+}
+
+
+aside {
+  background-color: whites;
+  grid-area: aside;
+  font-family: serif;
+}
+
+
+.infopagina {
+  display: flex;
+  max-width: 1239px;
+  margin: auto;
+  gap: 50px;
+}
+
+.maininfo {
+  max-width: 820px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 30px;
     padding: 20px;
-  }
-  header #logo {
-    width: 50px;
-  }
+
+}
+
+.tiempoprepara {
+  background-color: #faf4f8;
+  padding: 10px;
+  margin: 20px;
+  font-family: "DM Sans", sans-serif;
+
+}
+
+.ptexto{
+  margin: 20px;
+  font-family: serif;
+}
+
+.instruncciones{
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
   
-  header nav ul {
-    display: flex;
-    list-style-type: none;
-    gap: 20px;
-  }
-  
-  main {
-    background-color: white;
-    grid-area: main;
-  }
-  aside {
-    background-color:whites;
-    grid-area: aside;
-  }
-  footer {
-    background-color: white;
-    grid-area: footer;
-  }
-  .infopagina{
-    display: flex;
-    width: 100%;
-    gap: 50px;
-  }
-  .maininfo{
-    width: 70%;
-  }
-  .tiempoprepara{
-    background-color: #faf4f8;
-    padding: 10px;
-  }
+
+}
+.ingredientes{
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+}
+.masrecetas{
+  background-color: #fff;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+.botondark{
+  background-color: white;
+  max-width: 30px;
+  height: 30px;
+  border-radius: 20px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  align-items:center;
+}
