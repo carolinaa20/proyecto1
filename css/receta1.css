@@ -12,7 +12,7 @@ body {
   background-color: #255538;
   color: white;
   padding: 30px;
-  font-family: serif;
+  font-family: "DM Serif Display";
   border-radius: 10px;
   margin-bottom: 20px;
 
@@ -20,14 +20,14 @@ body {
 
 h1 {
   color: #7E4333;
-  font-family: serif;
+  font-family:"DM Serif Display";
   font-size: 27px;
   padding: auto;
 }
 
 h3 {
   color: #7E4333;
-  font-family: serif;
+  font-family:"DM Serif Display";
   font-size: 20px;
   padding: 10px;
   margin-bottom: 10px;
@@ -57,13 +57,13 @@ h3 {
 
 .logo {
   font-size: 24px;
-  font-family: serif;
+  font-family: "DM Serif Display";
   color: white;
 }
 
 .logo2 {
-  font-size: 24px;
-  font-family: sans-serif;
+  font-size: 20px;
+  font-family: "DM Serif";
   color: white;
 }
 

@@ -16,7 +16,7 @@ header{
   color: white;
   width: 100%;
   padding: 30px;
-  font-family: "DM sans";
+  font-family: "DM Serif Display";
   margin-bottom: 20px; 
 }
 
@@ -27,14 +27,15 @@ header{
 }
 .logo {
   font-size: 24px;
-  font-family: serif;
+  font-family: "DM Serif Display";
   color: white;
 }
 
 .logo2 {
-  font-size: 24px;
+  font-size: 20px;
   font-family: "DM Sans";
   color: white;
+  padding: 8px;
 }
 
 .header2 {
@@ -49,7 +50,7 @@ header{
   display: flex;
   justify-content: left;
   align-items: center;
-  font-family: "DM sans";
+  font-family: "DM Serif Display";
   padding: 20px;
   border-radius: 6px;
   margin-top: 20px;
@@ -67,7 +68,7 @@ header{
 
 h2 {
   color: #7E4333;
-  font-family: serif;
+  font-family:"DM Serif Display";
 }
 
 ul {
@@ -146,7 +147,7 @@ img {
 
 p {
   color: #7E4333;
-  font-family: serif;
+  font-family: "DM Serif Display";
   font-size: 25px;
 }
 
