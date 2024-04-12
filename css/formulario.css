@@ -1,7 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap');
+
+
+*{
+  box-sizing: border-box;
+}
 body {
-    box-sizing: border-box;
+    
    background-color: #f3e5d8;
 }
 
@@ -11,12 +16,12 @@ body {
     background-color: #255538;
     color: white;
     padding:  30px;
-    font-family: serif;
+    font-family: "DM Serif Display";
     margin-bottom: 20px;
   }
   .logo {
     font-size: 24px;
-    font-family: serif;
+    font-family: "DM Serif Display";
     color: white;
   }
  
@@ -24,6 +29,11 @@ body {
     font-size: 24px;
     font-family:"DM Sans" ;
     color: white;
+    padding: 5px;
+  }
+  nav {
+    display: flex;
+   
   }
   .caja1{
     margin-left: 200px;
@@ -38,7 +48,7 @@ body {
   }
   h1,h3{
     color: #7E4333;
-    font-family: serif;
+    font-family: "DM Serif Display";
   }
   p{
     font-family: sans-serif;
@@ -78,32 +88,45 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
-@media(max-width:768px){
-  .caja1{
-    width: 90%;
-    margin: auto;
-  }
-  .header, footer {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-   font-size: 10vw;
-  }
- 
+.dark-mode button {
+  background-color: #333;
+  color: #fff;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+}
+.botondark {
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+}
 
+.dark-mode button {
+  background-color: #333;
+  color: #fff;
+}
+
+@media (max-width: 1279px){
+  .caja1{
+    width: 80%;
+    margin: auto;
+  }
+ 
+ 
+}
 @media(max-width:768px){
   .caja1{
-    width: 90%;
+    width: 100%;
     margin: auto;
    
   }
-  .header, footer {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    font-size: 10wv;
-   
-  }
+  
  
 }
 
@@ -111,16 +134,11 @@ button {
 
 @media  (max-width: 660px){
   .caja1{
-    width: 90%;
+    width: 100%;
     margin:auto;
    
   }
-  .header, footer {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-   font-size: 10wv;
-
-  }
+  
  
 }
 

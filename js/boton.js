@@ -9,6 +9,7 @@ btn.addEventListener("click", (event) => {
     document.body.style.color = "black";
     gridItem.forEach(item => item.style.backgroundColor = "#fff");
     gridItem.forEach(item => item.style.color = "black");
+    
     isBlack = false
 
   }else{
