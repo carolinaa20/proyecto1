@@ -7,6 +7,8 @@ btn.addEventListener("click", (event) => {
   if(isBlack){
     document.body.style.backgroundColor = "#f3e5d8";
     document.body.style.color = "black";
+    gridItem.forEach(item => item.style.backgroundColor = "#fff");
+    gridItem.forEach(item => item.style.color = "black");
     isBlack = false
 
   }else{

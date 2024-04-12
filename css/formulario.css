@@ -26,6 +26,9 @@ body {
     color: white;
   }
   .caja1{
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 50px;
     border-radius: 5px;
     padding: 20px;
     max-width: 100%;
@@ -44,6 +47,7 @@ body {
 
 .form-group {
     margin-bottom: 20px;
+    max-width: 100%;
 }
 
 label {
@@ -55,10 +59,11 @@ input[type="text"],
 input[type="Tiempo"],
 textarea {
     width: 100%;
-    padding: 10px;
+    
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #F2F4F4;
+    height: 10px;
 }
 
 textarea {
@@ -73,3 +78,49 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
+@media(max-width:768px){
+  .caja1{
+    width: 90%;
+    margin: auto;
+  }
+  .header, footer {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+   font-size: 10vw;
+  }
+ 
+}
+
+
+@media(max-width:768px){
+  .caja1{
+    width: 90%;
+    margin: auto;
+   
+  }
+  .header, footer {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    font-size: 10wv;
+   
+  }
+ 
+}
+
+  
+
+@media  (max-width: 660px){
+  .caja1{
+    width: 90%;
+    margin:auto;
+   
+  }
+  .header, footer {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+   font-size: 10wv;
+
+  }
+ 
+}
+

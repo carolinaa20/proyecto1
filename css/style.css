@@ -1,41 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap');
-
-body {
+*{
   box-sizing: border-box;
+}
+body {
+  
   background-color: #f3e5d8;
 }
-
-@media screen and (max-width: 660px){
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    
-  }
-  .header{
-    width: 100%;
-
-  }
-}
-
-
-header,
-footer {
+ 
+footer,
+header{
   display: grid;
   grid-template-columns: 1fr auto;
   background-color: #255538;
   color: white;
+  width: 100%;
   padding: 30px;
-  font-family: serif;
-  margin-bottom: 20px;
+  font-family: "DM sans";
+  margin-bottom: 20px; 
 }
 
 .subtitulo {
-  width: 1239px;
+  
   margin: auto;
   display: flex;
 }
-
 .logo {
   font-size: 24px;
   font-family: serif;
@@ -48,10 +37,10 @@ footer {
   color: white;
 }
 
-.header-content {
+.header2 {
   position: relative;
   height: 300px;
-  width: 100vw;
+ 
   background-image: url(/image/img1.jpg);
   background-size: cover;
   background-position: center;
@@ -60,7 +49,7 @@ footer {
   display: flex;
   justify-content: left;
   align-items: center;
-  font-family: serif;
+  font-family: "DM sans";
   padding: 20px;
   border-radius: 6px;
   margin-top: 20px;
@@ -70,7 +59,7 @@ footer {
 
 .textcontentenido {
   color: #7E4333;
-  font-family: serif;
+  font-family:"DM sans";
   font-size: 30px;
   padding: 10px;
 
@@ -84,7 +73,9 @@ h2 {
 ul {
   font-family: "DM Sans";
 }
-
+nav{
+  display: flex;
+}
 nav ul {
   list-style: none;
   padding: 0;
@@ -115,7 +106,7 @@ main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  width: 1239px;
+  width: 100%;
   height: auto;
   justify-content: center;
   margin: auto;
@@ -164,9 +155,61 @@ p {
   width: 30px;
   height: 30px;
   border-radius: 20px;
+  
 }
 
 .dark-mode button {
   background-color: #333;
   color: #fff;
+}
+@media(max-width:1279px){
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    margin: auto;
+  }
+  
+  .header{
+    width: 90%;
+
+  }
+}
+
+
+
+@media(max-width:768px){
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 80%;
+    margin: auto;
+    
+  }
+  .header{
+    width: 90%;
+
+  }
+}
+
+
+
+@media  (max-width: 660px){
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    width: 80%;
+    margin: auto;
+    
+  }
+  .header{
+    width: 90%;
+
+  }
+  .header2{
+    width: 90%;
+  }
 }

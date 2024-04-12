@@ -13,7 +13,7 @@ body {
   color: white;
   padding: 30px;
   font-family: serif;
-  border-radius: 5px;
+  border-radius: 10px;
   margin-bottom: 20px;
 
 }
@@ -71,7 +71,9 @@ h3 {
   display: flex;
   justify-content: space-between;
 }
-
+nav{
+  display: flex;
+}
 nav ul {
   list-style: none;
   padding: 0;
@@ -138,17 +140,17 @@ aside {
   background-color: #faf4f8;
   padding: 10px;
   margin: 20px;
-  font-family: "DM Sans", sans-serif;
+  font-family: "DM Sans";
 
 }
 
 .ptexto{
   margin: 20px;
-  font-family: serif;
+  font-family: "DM Sans";
 }
 
 .instruncciones{
-  font-family: "DM Sans", sans-serif;
+  font-family: "DM Sans";
   font-size: 16px;
   
 
@@ -183,4 +185,46 @@ img {
   background-size: cover;
   background-position: center;
   align-items:center;
+}
+@media(max-width:768px){
+  .infopagina {
+    display: flex;
+    flex-direction:column;
+    max-width: 1239px;
+    margin: auto;
+    gap: 10px;
+    
+  } 
+  .footer{
+    width: 100%;
+    
+  }
+}
+@media(max-width:768px){
+  .infopagina {
+    display: flex;
+    flex-direction:column;
+    max-width: 1239px;
+    margin: auto;
+    gap: 10px;
+    
+  } 
+  .footer, header{
+    width: 100%;
+    
+  }
+}
+@media  (max-width: 660px){
+  .infopagina {
+    display: flex;
+    flex-direction:column;
+    max-width: 1239px;
+    margin: auto;
+    gap: 10px;
+    
+  } 
+  .footer{
+    width: 100%;
+    
+  }
 }
