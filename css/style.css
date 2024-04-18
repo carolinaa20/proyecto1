@@ -41,7 +41,7 @@ header {
   position: relative;
   height: 300px;
   max-width: 1200px;
-  background-image: url(/image/img1.jpg);
+  background-image: url(../image/img1.jpg);
   background-size: cover;
   background-position: center;
   color: white;
